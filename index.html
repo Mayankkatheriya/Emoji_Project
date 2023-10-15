@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4 id="tag">
+        Created by
+        <span
+          ><a
+            href="https://www.linkedin.com/in/mayank-gupta-752328173/"
+            target="blank"
+            >Mayank Gupta</a
+          ></span
+        >
+        ❤
+      </h4>
+      <h1>Emojee - Emoji 🔍 Application</h1>
+      <form id="search_form">
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="🔍 Emojee Search"
+          id="search_field"
+        />
+        <button>search</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>emoji</th>
+            <th>aliases</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody id="search_result_container"></tbody>
+      </table>
+    </div>
+    <script src="./emojiList.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

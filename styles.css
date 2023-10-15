@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+h4 {
+  margin-bottom: 1rem;
+  font-size: 0.6rem;
+  color: rgb(46, 29, 8);
+  text-align: center;
+}
+h4 span a {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+  transition: all 0.6s ease-in-out;
+}
+span a:hover {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #09806a;
+  text-decoration: dotted underline;
+}
+form {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(151, 82, 18);
+  font: 700 1.2rem/1rem cursive;
+  text-align: center;
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: rgb(214, 184, 156);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 20px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+input[type="text"]:hover {
+  background-color: #e7eefd;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+input[type="text"]:active {
+  background-color: #e1eafc;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+button {
+  appearance: button;
+  background-color: #0b5866;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #c1eaf5 4px 4px 0 0, #000 4px 4px 0 1px;
+  color: #d3e3f5;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+tr {
+  width: 100%;
+}
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+th {
+  padding: 12px 15px;
+  font-size: 1.4rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+td {
+  font-size: 1.2rem;
+  padding: 12px 15px;
+  text-transform: capitalize;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+@media screen and (max-width: 475px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
